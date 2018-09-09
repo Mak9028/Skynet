@@ -1,0 +1,40 @@
+<!--
+  Generated template for the Tab3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color = "primary" align-title="center">
+        <ion-buttons>
+          <button ion-button menuToggle >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-buttons>
+        
+      </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+ 
+      <ion-item-sliding *ngFor="let user of users" >
+    
+       <ion-item class="cards-bg" >
+        <ion-card-content  (click)="geteachRenewal(user.NotifyId)" >
+          <label>{{user.NotificationMessage}}</label>
+       </ion-card-content>
+       </ion-item>
+    
+       <ion-item-options>
+         <button danger (click)="removeItem()"><ion-icon name="trash"></ion-icon> Delete</button>
+       </ion-item-options>
+     </ion-item-sliding>
+    
+     </ion-list>
+
+</ion-content>

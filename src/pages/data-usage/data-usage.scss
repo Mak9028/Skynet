@@ -1,0 +1,30 @@
+page-data-usage {
+
+    .ios, .md {
+ 
+        page-home {
+     
+            .scroll-content {
+                background-color: map-get($colors, dark);
+            }
+     
+            ion-card-header {
+                font-weight: bold;
+            }
+
+
+            .myChart{
+                min-width : 500px; 
+                min-height: 500px;
+
+            }
+     
+        }
+
+
+     
+    }
+
+
+
+}

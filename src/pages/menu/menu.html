@@ -1,0 +1,51 @@
+<!--
+  Generated template for the MenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-menu side="left" type="overlay" [content]="content" >
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+ 
+  <ion-content>
+      <div class="menu-header">
+          <!--material-design-background-->
+          <img class="user-avatar round" style="height:90px;max-width:90px;" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'"
+          />
+          <p class="name">Mak</p>
+          <p class="e-mail">mak@cnergee.com</p>
+        </div>
+    <ion-list>
+      <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+          {{ p.title }}
+        </button>
+
+        <button ion-item menuClose (click)="openRenewalpage()">
+            
+          <ion-icon item-start name="card"></ion-icon>
+          Renewal
+        </button>
+        <button ion-item menuClose (click)="callIT('+918237194700')">
+            
+          <ion-icon item-start name="call"></ion-icon>
+          Call US
+        </button>
+        <button ion-item menuClose (click)="logoutClicked()">
+          <ion-icon item-start name="exit"></ion-icon>
+          Logout
+        </button>
+
+      
+        
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+ 
+<!-- main navigation -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

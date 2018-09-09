@@ -1,0 +1,60 @@
+
+
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="https://www.revaalo.com/sites/default/files/styles/product_245x245/public/logo_red.png%20revaalo.logo_.png"/>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box">
+    <form [formGroup]="credentialsForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+              <ion-input floating [formControl]="credentialsForm.controls['email']"
+          type="email" required></ion-input>
+            </ion-item>
+
+
+            <ion-label >OR</ion-label>
+
+
+            <ion-item>
+              <ion-label floating>Mobile</ion-label>
+              <ion-input [formControl]="credentialsForm.controls['password']"
+                  type="password" required></ion-input>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button round
+          [disabled]="!credentialsForm.valid"
+          (click)="doLogin()">
+            Sign in
+          </button>
+
+          <div class="circle">
+            <div class="line-container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+
+          <button ion-button class="register-btn" block clear (click)="goEnuiry()">New Customer</button>
+        </ion-col>
+      </ion-row>
+      
+    </form>
+  </div>
+</ion-content>

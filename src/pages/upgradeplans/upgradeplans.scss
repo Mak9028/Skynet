@@ -1,0 +1,135 @@
+page-upgradeplans {
+
+    
+
+ion-segment {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    overflow: auto;
+    margin-top: -25px;
+    //width: 25p0x;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    ion-segment-button.segment-button {
+        display: inline-block;
+        min-width: 70px;
+        width: auto;
+    }
+}
+
+
+
+.scrolling-wrapper {
+ // overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: auto;
+  flex: initial;
+  //height: 200px;
+  
+
+}
+
+.card{
+  width: 320px;
+  height:200px;
+  //font-size: 25px;
+ // white-space: pre-line;
+  //font-stretch: condensed;
+
+  //background-image: "";
+  border-radius: 2rem;
+ // overflow: visible;
+}
+
+.img{
+  //display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: right;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 18px;
+      width: 95%;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      align-content: end;
+      white-space: pre-line;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 95%;
+      color: rgb(0, 0, 0);
+      //white-space: pre-line;
+    }
+    .ion-card-content{
+      font-size: 1.0em;
+      margin-block-start: -37px;
+      top: 52%;
+      width: 100%;
+      color: rgb(0, 0, 0);
+    }
+
+  }
+
+
+  .ex3 .hide3 {
+    width: 50%;
+    display: table;
+    height: 150px; /* any arbitrary height but best at the minimum initial height you would want. */
+    overflow: hidden;
+    background: red;
+    transition: all 0.5s ease;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .inner3 {
+    padding: 10px;
+  }
+  .ex3 input[type="checkbox"]:checked + .hide3 {
+    height: 0;
+    opacity: 0;
+    display: block;
+  }
+
+
+  label {
+    display: block;
+    margin: 20px 0 0;
+    border-bottom: 1px solid green;
+  }
+  label:hover {
+    text-decoration: underline;
+  }
+  input {
+    position: absolute;
+    left: -999em;
+  }
+  
+
+
+}

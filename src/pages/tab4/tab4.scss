@@ -1,0 +1,15 @@
+page-tab4 {
+
+    ion-scroll[direction=y] {
+        height: 100vh;
+      }
+      .scroll-content {
+        overflow-y: auto !important;
+       // overflow-scroll= true
+     }
+
+     .alert-wrapper{
+         overflow-y: auto !important;
+     }
+    // $ionicConfigProvider 
+}

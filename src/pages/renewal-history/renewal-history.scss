@@ -1,0 +1,17 @@
+page-renewal-history {
+    .scroll-content {
+        overflow: scroll;
+        
+      }
+      .alert-wrapper{
+        overflow: hidden;
+        font-size:8px;
+      }
+
+      .alert-md .alert-message{
+        overflow: hidden;
+        font-size: 5px;
+        align-content: flex-end;
+      }
+
+}
